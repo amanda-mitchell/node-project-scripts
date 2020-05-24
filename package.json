@@ -1,0 +1,10 @@
+{
+  "name": "@david-mitchell/node-project-scripts",
+  "version": "1.0.0",
+  "description": "Common scripts and configuration for my node projects.",
+  "main": "index.js",
+  "repository": "https://github.com/david-mitchell/node-project-scripts",
+  "author": "Amanda Mitchell",
+  "license": "MIT",
+  "private": false
+}
