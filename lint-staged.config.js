@@ -1,1 +1,1 @@
-module.exports = { '*.js': ['eslint'] };
+module.exports = { '*.js': ['eslint', 'prettier --write'] };
