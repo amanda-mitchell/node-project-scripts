@@ -8,7 +8,9 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "install": "scripts/install.js"
+    "_install": "node scripts/install.js",
+    "prepublishOnly": "pinst --enable",
+    "postpublish": "pinst --disable"
   },
   "dependencies": {
     "@commitlint/cli": "^8.3.5",
@@ -17,5 +19,8 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.6",
     "prettier": "2.0.5"
+  },
+  "devDependencies": {
+    "pinst": "^2.0.0"
   }
 }
