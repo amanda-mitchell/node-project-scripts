@@ -6,5 +6,10 @@
   "repository": "https://github.com/david-mitchell/node-project-scripts",
   "author": "Amanda Mitchell",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "husky": "^4.2.5"
+  }
 }
