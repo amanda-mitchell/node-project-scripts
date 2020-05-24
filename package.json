@@ -7,6 +7,9 @@
   "author": "Amanda Mitchell",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "install": "scripts/install.js"
+  },
   "dependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
