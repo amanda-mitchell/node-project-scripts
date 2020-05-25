@@ -1,4 +1,16 @@
 const fs = require('fs');
+const path = require('path');
+const pkgDir = require('pkg-dir');
+
+const hostDirectory = process.env['INIT_CWD'];
+if (!hostDirectory) {
+  return;
+}
+
+const packageDirectory = pkgDir.sync(hostDirectory);
+if (!packageDirectory) {
+  return;
+}
 
 for (const config of [
   'commitlint.config',
@@ -9,5 +21,5 @@ for (const config of [
   'release.config',
 ]) {
   const content = `module.exports = require('@david-mitchell/node-project-scripts/${config}');\n`;
-  fs.writeFileSync(`${config}.js`, content);
+  fs.writeFileSync(path.join(packageDirectory, `${config}.js`), content);
 }
