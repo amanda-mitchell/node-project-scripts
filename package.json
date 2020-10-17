@@ -18,7 +18,7 @@
     "@commitlint/config-conventional": "^8.3.4",
     "eslint": "^7.1.0",
     "husky": "^4.2.5",
-    "lint-staged": "^10.2.6",
+    "lint-staged": "^10.4.2",
     "pkg-dir": "^4.2.0",
     "prettier": "2.0.5",
     "semantic-release": "^17.0.8"
