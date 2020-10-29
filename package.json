@@ -24,7 +24,7 @@
     "lint-staged": "^10.5.1",
     "pkg-dir": "^4.2.0",
     "prettier": "2.1.2",
-    "semantic-release": "^17.0.8"
+    "semantic-release": "^17.2.2"
   },
   "devDependencies": {
     "pinst": "^2.0.0"
