@@ -20,6 +20,6 @@ for (const config of [
   'prettier.config',
   'release.config',
 ]) {
-  const content = `module.exports = require('@david-mitchell/node-project-scripts/${config}');\n`;
+  const content = `module.exports = require('@amanda-mitchell/node-project-scripts/${config}');\n`;
   fs.writeFileSync(path.join(packageDirectory, `${config}.js`), content);
 }
