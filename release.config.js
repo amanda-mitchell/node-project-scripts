@@ -1,1 +1,1 @@
-module.exports = { branches: ['master'] };
+module.exports = { branches: ['main'] };
