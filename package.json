@@ -7,15 +7,18 @@
   "author": "Amanda Mitchell",
   "license": "MIT",
   "private": false,
-  "files": ["*.js", "scripts/*.js"],
+  "files": [
+    "*.js",
+    "scripts/*.js"
+  ],
   "scripts": {
     "_install": "node scripts/install.js",
     "prepublishOnly": "pinst --enable",
     "postpublish": "pinst --disable"
   },
   "dependencies": {
-    "@commitlint/cli": "^8.3.5",
-    "@commitlint/config-conventional": "^8.3.4",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "eslint": "^7.1.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.6",
