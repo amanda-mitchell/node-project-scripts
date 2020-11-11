@@ -1,6 +1,6 @@
 # node-project-scripts
 
-https://github.com/amanda-mitchell/node-project-scripts/workflows/Release/badge.svg
+![Current build status](https://github.com/amanda-mitchell/node-project-scripts/workflows/Release/badge.svg)
 
 This package contains common configuration and settings for use across all of my projects.
 It was inspired by [react-scripts](https://www.npmjs.com/package/react-scripts), which is used by Create React App to simplify configuration and tooling upgrades.
