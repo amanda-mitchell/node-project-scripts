@@ -1,1 +1,5 @@
-module.exports = { '*.js': ['eslint', 'prettier --write'] };
+module.exports = {
+  '*.js': ['eslint', 'prettier --write'],
+  '*.md': ['prettier --write'],
+  '*.json': ['prettier --write'],
+};
