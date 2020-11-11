@@ -11,6 +11,9 @@
     "*.js",
     "scripts/*.js"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "_install": "node scripts/install.js",
     "prepublishOnly": "pinst --enable",
