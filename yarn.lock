@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@amanda-mitchell/semantic-release-npm-multiple@^2.0.0":
-  version "2.0.0"
-  resolved "https://npm.pkg.github.com/download/@amanda-mitchell/semantic-release-npm-multiple/2.0.0/50218bddde7c9abcf14f22afe56dfda301dc7d34281880243f0993372db100db#2b015521f580af5a897a53dbe0f04d26bf0a3f82"
-  integrity sha512-toLagQzFqcYPrMbcf0WQ6ho4+cS++jrieJNjFl9n7mctcDlDdQ72uxS1IaGNVfGFeW9OS8OcXlaLgZwQr0LwXg==
+"@amanda-mitchell/semantic-release-npm-multiple@^2.1.1":
+  version "2.1.1"
+  resolved "https://npm.pkg.github.com/download/@amanda-mitchell/semantic-release-npm-multiple/2.1.1/c6ac54dd0a80766336bf307e1977efb9081562fc191c65b27df9e505a2fe4923#3268371b4bcfa24ca3c8fd738e5e14d8b90f70d6"
+  integrity sha512-Hoi3wpGoaO2Sp00OAZCAGG/zOxys9xfPOLARE7H81PSCh82tW4k/XZiO3dzJqVqeDG8SDlo7CWbDae1yqFrNfw==
   dependencies:
     "@semantic-release/npm" "^7.0.6"
     require-reload "^0.2.2"
