@@ -30,6 +30,7 @@
     "semantic-release": "^17.2.2"
   },
   "devDependencies": {
+    "@amanda-mitchell/semantic-release-npm-multiple": "^2.0.0",
     "pinst": "^2.0.0"
   }
 }

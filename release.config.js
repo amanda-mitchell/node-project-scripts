@@ -5,7 +5,7 @@ module.exports = {
     '@semantic-release/release-notes-generator',
     [
       '@amanda-mitchell/semantic-release-npm-multiple',
-      { github: {}, public: {} },
+      { registries: { github: {}, public: {} } },
     ],
     '@semantic-release/github',
   ],
