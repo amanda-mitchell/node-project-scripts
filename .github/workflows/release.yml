@@ -17,6 +17,8 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       - name: Install dependencies
         run: yarn --frozen-lockfile --ignore-scripts
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
