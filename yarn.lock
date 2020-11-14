@@ -4075,9 +4075,9 @@ pify@^3.0.0:
   integrity sha1-5aSs0sEB/fPZpNB/DbxNtJ3SgXY=
 
 pinst@^2.0.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/pinst/-/pinst-2.1.0.tgz#3652af1eb624baf8836f6414f0f31d504059c9b4"
-  integrity sha512-dQAQeTpb6hE6SGEVOzdDxB3eBaMI9no/bneY87wPPoQd6FDLAzndY76ovOvzQRo/RyctTtWTxdO8xVQukMvwMA==
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/pinst/-/pinst-2.1.1.tgz#cba4a49bdbfdeaedc88bd4e01bcd1ee6e4641333"
+  integrity sha512-n8P1bTw2B3Ff/wkG2yP7HN3wBIkobfkuNS5WNhsUrM+/QTSJUZc2n/WPUSxONRjaXMffmjCNDTjwDy0ptVHlbw==
   dependencies:
     load-json-file "^6.2.0"
     lodash.mapkeys "^4.6.0"
