@@ -30,4 +30,11 @@ if (issuePublicRelease) {
     '@amanda-mitchell/semantic-release-notify-dependabot',
     '@semantic-release/github',
   ];
+} else {
+  module.exports.plugins = [
+    '@semantic-release/commit-analyzer',
+    '@semantic-release/npm',
+    '@amanda-mitchell/semantic-release-notify-dependabot',
+    '@semantic-release/github',
+  ];
 }
