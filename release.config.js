@@ -27,6 +27,7 @@ if (issuePublicRelease) {
       '@amanda-mitchell/semantic-release-npm-multiple',
       { registries: { github: {}, public: {} } },
     ],
+    '@amanda-mitchell/semantic-release-notify-dependabot',
     '@semantic-release/github',
   ];
 }
