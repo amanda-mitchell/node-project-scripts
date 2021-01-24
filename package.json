@@ -9,7 +9,8 @@
   "private": false,
   "files": [
     "*.js",
-    "scripts/*.js"
+    "scripts/*.js",
+    "tsconfig.json"
   ],
   "publishConfig": {
     "access": "public"
