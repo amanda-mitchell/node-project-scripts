@@ -19,7 +19,15 @@ for (const config of [
   '.eslintrc',
   'prettier.config',
   'release.config',
+  'jest.config',
 ]) {
   const content = `module.exports = require('@amanda-mitchell/node-project-scripts/${config}');\n`;
   fs.writeFileSync(path.join(packageDirectory, `${config}.js`), content);
 }
+
+fs.writeFileSync(
+  path.join(packageDirectory, 'tsconfig.json'),
+  JSON.stringify({
+    extends: '@amanda-mitchell/node-project-scripts/tsconfig.json',
+  })
+);
