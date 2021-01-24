@@ -27,7 +27,16 @@ for (const config of [
 
 fs.writeFileSync(
   path.join(packageDirectory, 'tsconfig.json'),
-  JSON.stringify({
-    extends: '@amanda-mitchell/node-project-scripts/tsconfig.json',
-  })
+  JSON.stringify(
+    {
+      extends: '@amanda-mitchell/node-project-scripts/tsconfig.json',
+      compilerOptions: {
+        outDir: './dist' /* Redirect output structure to the directory. */,
+        rootDir:
+          './lib' /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */,
+      },
+    },
+    null,
+    2
+  )
 );
