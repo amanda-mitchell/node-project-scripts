@@ -24,7 +24,7 @@
     "@amanda-mitchell/semantic-release-notify-dependabot": "^1.0.0",
     "@amanda-mitchell/semantic-release-npm-multiple": "^2.1.1",
     "@commitlint/cli": "^13.1.0",
-    "@commitlint/config-conventional": "^12.0.0",
+    "@commitlint/config-conventional": "^13.1.0",
     "@tsconfig/node12": "^1.0.7",
     "@types/jest": "^26.0.20",
     "@typescript-eslint/eslint-plugin": "^4.14.0",
