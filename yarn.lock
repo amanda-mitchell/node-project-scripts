@@ -3,9 +3,9 @@
 
 
 "@amanda-mitchell/semantic-release-notify-dependabot@^1.0.0":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@amanda-mitchell/semantic-release-notify-dependabot/-/semantic-release-notify-dependabot-1.0.7.tgz#d72663a28d2b0ee7cf4cf48ba293db57f0f809b3"
-  integrity sha512-N/RRFpKZ6ZC+U3a5bUMQCF3bshZONSUofPWyfzuQ4Kef/si4h2SzEVXHaQaF+w/wOdAlFUnxucLXs5ZCZnYZUA==
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@amanda-mitchell/semantic-release-notify-dependabot/-/semantic-release-notify-dependabot-1.0.8.tgz#dfdca33d81bf2e17a8aff437d8b546c006de5def"
+  integrity sha512-+erkZiEw25W+7ZNFnNdNigoQvIIY5M/5HtQ4o6q92Fk2VfRaqCqLbCNTvCh1bLXfQVD4xFV98VgDc7uDDPS8sA==
   dependencies:
     node-fetch "^2.6.1"
 
