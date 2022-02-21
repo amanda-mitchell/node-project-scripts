@@ -14,6 +14,6 @@ jobs:
       - name: Install dependencies
         run: yarn --frozen-lockfile --ignore-scripts
       - name: Prettier
-        run: yarn prettier --check "./**/*.{js,md}"
+        run: yarn prettier --check "./**/*.{js,md,cjs,mjs}"
       - name: Lint
-        run: yarn eslint "./**/*.js"
+        run: yarn eslint "./**/*.{js,cjs,mjs}"
