@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import pkgDir from 'pkg-dir';
+import { packageDirectorySync } from 'pkg-dir';
 
 (function main() {
   const hostDirectory = process.env['INIT_CWD'];
@@ -8,7 +8,7 @@ import pkgDir from 'pkg-dir';
     return;
   }
 
-  const packageDirectory = pkgDir.sync(hostDirectory);
+  const packageDirectory = packageDirectorySync(hostDirectory);
   if (!packageDirectory) {
     return;
   }
