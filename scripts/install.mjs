@@ -13,6 +13,16 @@ import { packageDirectorySync } from 'pkg-dir';
     return;
   }
 
+  if (
+    JSON.parse(fs.readFileSync('package.json')).name ===
+    '@amanda-mitchell/node-project-scripts'
+  ) {
+    console.warn(
+      'Skipping install script because this project cannot be installed on top of itself.'
+    );
+    return;
+  }
+
   for (const config of [
     'commitlint.config',
     'husky.config',
