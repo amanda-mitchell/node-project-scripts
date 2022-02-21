@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "files": [
-    "*.js",
+    "*.cjs",
     "scripts/*.mjs",
     "tsconfig.json"
   ],

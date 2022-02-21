@@ -33,7 +33,8 @@ import { packageDirectorySync } from 'pkg-dir';
     'jest.config',
   ]) {
     const content = `module.exports = require('@amanda-mitchell/node-project-scripts/${config}');\n`;
-    fs.writeFileSync(path.join(packageDirectory, `${config}.js`), content);
+    fs.rmSync(path.join(packageDirectory, `${config}.cjs`), { force: true });
+    fs.writeFileSync(path.join(packageDirectory, `${config}.cjs`), content);
   }
 
   fs.writeFileSync(
