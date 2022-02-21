@@ -32,8 +32,8 @@ import { packageDirectorySync } from 'pkg-dir';
     'release.config',
     'jest.config',
   ]) {
-    const content = `module.exports = require('@amanda-mitchell/node-project-scripts/${config}');\n`;
-    fs.rmSync(path.join(packageDirectory, `${config}.cjs`), { force: true });
+    const content = `module.exports = require('@amanda-mitchell/node-project-scripts/${config}.cjs');\n`;
+    fs.rmSync(path.join(packageDirectory, `${config}.js`), { force: true });
     fs.writeFileSync(path.join(packageDirectory, `${config}.cjs`), content);
   }
 
