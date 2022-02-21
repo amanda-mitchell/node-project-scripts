@@ -16,7 +16,7 @@
     "access": "public"
   },
   "scripts": {
-    "_install": "node scripts/install.js",
+    "_install": "node scripts/install.mjs",
     "prepublishOnly": "pinst --enable",
     "postpublish": "pinst --disable"
   },
