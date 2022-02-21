@@ -5,11 +5,15 @@ import { packageDirectorySync } from 'pkg-dir';
 (function main() {
   const hostDirectory = process.env['INIT_CWD'];
   if (!hostDirectory) {
+    console.warn(
+      'Skipping install because INIT_CWD environment variable is missing.'
+    );
     return;
   }
 
   const packageDirectory = packageDirectorySync(hostDirectory);
   if (!packageDirectory) {
+    console.warn('Skipping install because package directory cannot be found.');
     return;
   }
 
@@ -32,8 +36,9 @@ import { packageDirectorySync } from 'pkg-dir';
     'release.config',
     'jest.config',
   ]) {
-    const content = `module.exports = require('@amanda-mitchell/node-project-scripts/${config}.cjs');\n`;
     fs.rmSync(path.join(packageDirectory, `${config}.js`), { force: true });
+
+    const content = `module.exports = require('@amanda-mitchell/node-project-scripts/${config}.cjs');\n`;
     fs.writeFileSync(path.join(packageDirectory, `${config}.cjs`), content);
   }
 
