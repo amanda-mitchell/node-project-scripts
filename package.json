@@ -21,7 +21,7 @@
     "postpublish": "pinst --disable"
   },
   "dependencies": {
-    "@amanda-mitchell/semantic-release-npm-multiple": "^2.1.1",
+    "@amanda-mitchell/semantic-release-npm-multiple": "^3.0.0",
     "@commitlint/cli": "^16.0.0",
     "@commitlint/config-conventional": "^16.0.0",
     "@tsconfig/node12": "^1.0.7",
