@@ -59,8 +59,8 @@ import { packageDirectorySync } from 'pkg-dir';
     )
   );
 
-  fs.rmSync(path.join(packageDirectory, 'jest.config.js'));
-  fs.rmSync(path.join(packageDirectory, 'jest.config.cjs'));
+  fs.rmSync(path.join(packageDirectory, 'jest.config.js', { force: true }));
+  fs.rmSync(path.join(packageDirectory, 'jest.config.cjs', { force: true }));
   fs.writeFileSync(
     path.join(
       packageDirectory,
