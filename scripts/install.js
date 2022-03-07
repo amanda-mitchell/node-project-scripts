@@ -36,7 +36,6 @@ import { packageDirectorySync } from 'pkg-dir';
     '.eslintrc',
     'prettier.config',
     'release.config',
-    'jest.config',
   ]) {
     fs.rmSync(path.join(packageDirectory, `${config}.js`), { force: true });
 
@@ -57,6 +56,20 @@ import { packageDirectorySync } from 'pkg-dir';
       },
       null,
       2
+    )
+  );
+
+  fs.rmSync(path.join(packageDirectory, 'jest.config.js'));
+  fs.rmSync(path.join(packageDirectory, 'jest.config.cjs'));
+  fs.writeFileSync(
+    path.join(
+      packageDirectory,
+      'jest.config.json',
+      JSON.stringify(
+        { preset: '@amanda-mitchell/node-project-scripts' },
+        null,
+        2
+      )
     )
   );
 })();
