@@ -62,14 +62,7 @@ import { packageDirectorySync } from 'pkg-dir';
   fs.rmSync(path.join(packageDirectory, 'jest.config.js'), { force: true });
   fs.rmSync(path.join(packageDirectory, 'jest.config.cjs'), { force: true });
   fs.writeFileSync(
-    path.join(
-      packageDirectory,
-      'jest.config.json',
-      JSON.stringify(
-        { preset: '@amanda-mitchell/node-project-scripts' },
-        null,
-        2
-      )
-    )
+    path.join(packageDirectory, 'jest.config.json'),
+    JSON.stringify({ preset: '@amanda-mitchell/node-project-scripts' }, null, 2)
   );
 })();
