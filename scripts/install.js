@@ -5,23 +5,25 @@ import { packageDirectorySync } from 'pkg-dir';
 (function main() {
   const hostDirectory = process.env['INIT_CWD'];
   if (!hostDirectory) {
-    console.warn(
+    console.error(
       'Skipping install because INIT_CWD environment variable is missing.'
     );
     return;
   }
 
-  const packageDirectory = packageDirectorySync(hostDirectory);
+  const packageDirectory = packageDirectorySync({ cwd: hostDirectory });
   if (!packageDirectory) {
-    console.warn('Skipping install because package directory cannot be found.');
+    console.error(
+      'Skipping install because package directory cannot be found.'
+    );
     return;
   }
 
   if (
-    JSON.parse(fs.readFileSync('package.json')).name ===
-    '@amanda-mitchell/node-project-scripts'
+    JSON.parse(fs.readFileSync(path.join(packageDirectory, 'package.json')))
+      .name === '@amanda-mitchell/node-project-scripts'
   ) {
-    console.warn(
+    console.error(
       'Skipping install script because this project cannot be installed on top of itself.'
     );
     return;

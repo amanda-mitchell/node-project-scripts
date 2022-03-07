@@ -7,9 +7,10 @@
   "author": "Amanda Mitchell",
   "license": "MIT",
   "private": false,
+  "type": "module",
   "files": [
     "*.cjs",
-    "scripts/*.mjs",
+    "scripts/*.js",
     "tsconfig.json"
   ],
   "publishConfig": {
