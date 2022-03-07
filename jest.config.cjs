@@ -10,6 +10,8 @@ function findTsJestPreset() {
     }
     resolvedPath = parent;
   }
+  
+  return resolvedPath;
 }
 
 module.exports = {
