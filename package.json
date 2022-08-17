@@ -34,7 +34,7 @@
     "husky": "4.x",
     "jest": "^27.5.1",
     "lint-staged": "^13.0.0",
-    "pkg-dir": "^6.0.0",
+    "pkg-dir": "^7.0.0",
     "prettier": "2.7.1",
     "semantic-release": "^19.0.2",
     "ts-jest": "^27.1.3",
