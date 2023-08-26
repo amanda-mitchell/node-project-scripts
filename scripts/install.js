@@ -6,7 +6,7 @@ import { packageDirectorySync } from 'pkg-dir';
   const hostDirectory = process.env['INIT_CWD'];
   if (!hostDirectory) {
     console.error(
-      'Skipping install because INIT_CWD environment variable is missing.'
+      'Skipping install because INIT_CWD environment variable is missing.',
     );
     return;
   }
@@ -14,7 +14,7 @@ import { packageDirectorySync } from 'pkg-dir';
   const packageDirectory = packageDirectorySync({ cwd: hostDirectory });
   if (!packageDirectory) {
     console.error(
-      'Skipping install because package directory cannot be found.'
+      'Skipping install because package directory cannot be found.',
     );
     return;
   }
@@ -24,7 +24,7 @@ import { packageDirectorySync } from 'pkg-dir';
       .name === '@amanda-mitchell/node-project-scripts'
   ) {
     console.error(
-      'Skipping install script because this project cannot be installed on top of itself.'
+      'Skipping install script because this project cannot be installed on top of itself.',
     );
     return;
   }
@@ -55,14 +55,18 @@ import { packageDirectorySync } from 'pkg-dir';
         },
       },
       null,
-      2
-    )
+      2,
+    ),
   );
 
   fs.rmSync(path.join(packageDirectory, 'jest.config.js'), { force: true });
   fs.rmSync(path.join(packageDirectory, 'jest.config.cjs'), { force: true });
   fs.writeFileSync(
     path.join(packageDirectory, 'jest.config.json'),
-    JSON.stringify({ preset: '@amanda-mitchell/node-project-scripts' }, null, 2)
+    JSON.stringify(
+      { preset: '@amanda-mitchell/node-project-scripts' },
+      null,
+      2,
+    ),
   );
 })();

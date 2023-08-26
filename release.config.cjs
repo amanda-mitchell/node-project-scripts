@@ -4,7 +4,7 @@ let issuePublicRelease = false;
 let isScopedPackage = false;
 try {
   const packageJson = JSON.parse(
-    fs.readFileSync('./package.json', { encoding: 'utf-8' })
+    fs.readFileSync('./package.json', { encoding: 'utf-8' }),
   );
   if (
     packageJson.publishConfig &&
