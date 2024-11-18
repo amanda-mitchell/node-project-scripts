@@ -8,9 +8,9 @@
   integrity sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==
 
 "@amanda-mitchell/semantic-release-npm-multiple@^3.11.0":
-  version "3.11.0"
-  resolved "https://registry.yarnpkg.com/@amanda-mitchell/semantic-release-npm-multiple/-/semantic-release-npm-multiple-3.11.0.tgz#13ebe16a36266742fa3ed98e4f4815ec87eb2be3"
-  integrity sha512-GGxALWHohyJxMxZsjyBL723CdChw9RvMESdZB5gFaVgOPtbZlaMN6pkzYAubBz1CkgJCkqABUZhBzRmhAb2x+g==
+  version "3.11.1"
+  resolved "https://registry.yarnpkg.com/@amanda-mitchell/semantic-release-npm-multiple/-/semantic-release-npm-multiple-3.11.1.tgz#3808c21fcada2eec797ef6bda2013f888108c8a4"
+  integrity sha512-HQc2QEY4mYP4jU63bqoslsR4vmjj8OlbzdRYv2ZqEoyGYi8hWOcGIiJuilzFfTjLsWgVhukdLW8hCzMNdEduZA==
   dependencies:
     "@semantic-release/npm" "^12.0.1"
 
