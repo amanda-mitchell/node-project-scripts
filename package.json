@@ -33,7 +33,7 @@
     "eslint": "^8.9.0",
     "husky": "4.x",
     "jest": "^29.6.4",
-    "lint-staged": "^15.0.1",
+    "lint-staged": "^16.0.0",
     "pkg-dir": "^8.0.0",
     "prettier": "3.5.3",
     "semantic-release": "^24.2.0",
