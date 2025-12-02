@@ -37,7 +37,7 @@
     "pkg-dir": "^9.0.0",
     "prettier": "3.7.3",
     "semantic-release": "^25.0.0",
-    "ts-jest": "29.4.5",
+    "ts-jest": "29.4.6",
     "typescript": "5.9.3"
   },
   "devDependencies": {
