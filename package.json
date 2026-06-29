@@ -35,7 +35,7 @@
     "jest": "^30.0.0",
     "lint-staged": "^17.0.2",
     "pkg-dir": "^9.0.0",
-    "prettier": "3.8.5",
+    "prettier": "3.9.3",
     "semantic-release": "^25.0.0",
     "ts-jest": "29.4.11",
     "typescript": "6.0.3"
