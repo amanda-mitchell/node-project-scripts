@@ -1721,9 +1721,9 @@
     "@sinonjs/commons" "^3.0.1"
 
 "@tsconfig/node18@^18.2.1":
-  version "18.2.7"
-  resolved "https://registry.yarnpkg.com/@tsconfig/node18/-/node18-18.2.7.tgz#798b9e860d418a6bf0c9308beb7970c08c1a3ea7"
-  integrity sha512-UyenTORreCUh8MKh2qbLGGHTRrxjBbSwvX0ZoWs6Jx1jrNS62PXEA3+VaLvmb0YDQrgGU3v3h7zB9Xs/BN1ozg==
+  version "18.2.8"
+  resolved "https://registry.yarnpkg.com/@tsconfig/node18/-/node18-18.2.8.tgz#37ab996e2cd0fd0d3da6a210846ea6626fdb60b3"
+  integrity sha512-bxn9vGVfFpyb0cv2JMvTdcfC16kiJy+4p88Ffi9vb4FAmNvhMiMW4BjMlVGEUvrtgDe9DcxPDAoOAcFJBW96IA==
 
 "@tufjs/canonical-json@2.0.0":
   version "2.0.0"
